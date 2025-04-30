@@ -245,7 +245,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88d57d2415781cd448e731c1e818426c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obsticalPrefab: {fileID: 1359178864843140503, guid: fa5345cbf5f884544ae1a536702b6fb6, type: 3}
+  obsticalPrefabs:
+  - {fileID: 1359178864843140503, guid: fa5345cbf5f884544ae1a536702b6fb6, type: 3}
+  - {fileID: 1938575380489003997, guid: 8075e5aad23090d4faffff53820bc902, type: 3}
+  - {fileID: 3121507796580285254, guid: 1c97102ebbeeec5408be6fbd20f6b110, type: 3}
 --- !u!4 &308789437
 Transform:
   m_ObjectHideFlags: 0
@@ -826,6 +829,8 @@ MonoBehaviour:
   gravityModifier: 2
   isOnGround: 1
   gameOver: 0
+  doubleJumpUsed: 0
+  doubleJumpForce: 600
 --- !u!65 &1949353263
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -845,7 +850,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: -1.19, y: 3.06, z: -1.02}
+  m_Size: {x: 1.6, y: 3.06, z: 1.07}
   m_Center: {x: 0, y: 1.56, z: 0}
 --- !u!54 &1949353264
 Rigidbody:
