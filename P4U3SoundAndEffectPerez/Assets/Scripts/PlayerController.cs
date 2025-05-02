@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     public bool gameOver;
     public bool doubleJumpUsed = false;
     public float doubleJumpForce;
+    public bool doubleSpeed = false;
 
     // Start iscalled before the first frame update
     void Start()
@@ -43,6 +44,21 @@ public class PlayerController : MonoBehaviour
 
             
         }
+
+
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            doubleSpeed = true;
+            playerAnim.SetFloat("Speed_Multiplier", 2.0f);
+        
+        }
+        else if (doubleSpeed)
+        {
+            doubleSpeed = false;
+            playerAnim.SetFloat("Speed_Multiplier", 1.0f);
+        }
+
+
         else if (Input.GetKeyDown(KeyCode.Space)&&!isOnGround&&!doubleJumpUsed)
         {
             doubleJumpUsed = true;
