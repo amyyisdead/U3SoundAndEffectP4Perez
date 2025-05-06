@@ -25,6 +25,6 @@ public class GameManager : MonoBehaviour
         {
             score++;
         }
-        Debug.Log("Score:" + score);
+        //Debug.Log("Score:" + score);
     }
 }

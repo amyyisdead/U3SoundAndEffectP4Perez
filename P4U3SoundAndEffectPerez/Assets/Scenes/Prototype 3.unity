@@ -493,7 +493,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 606910ec401804eb09925f0d57909c04, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.523
+  m_Volume: 0.17
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -870,12 +870,12 @@ MonoBehaviour:
   dirtParticale: {fileID: 952641161}
   jumpSound: {fileID: 8300000, guid: 0f7d0b7c3397f4dac91f20e8a77d2d57, type: 3}
   crashSound: {fileID: 8300000, guid: 913d6445ee8cc4152a9c18da590ee203, type: 3}
-  jumpForce: 150
+  jumpForce: 600
   gravityModifier: 2
   isOnGround: 1
   gameOver: 0
   doubleJumpUsed: 0
-  doubleJumpForce: 400
+  doubleJumpForce: 700
   doubleSpeed: 0
 --- !u!65 &1949353263
 BoxCollider:
@@ -942,7 +942,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.609
   m_Pitch: 1
   Loop: 0
   Mute: 0
