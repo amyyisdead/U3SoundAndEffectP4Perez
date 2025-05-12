@@ -16,7 +16,7 @@ public class PlayerControllerX : MonoBehaviour
     private AudioSource playerAudio;
     public AudioClip moneySound;
     public AudioClip explodeSound;
-    public AudioClip boingsound;
+   
     public float upperLimit = 15.0f;
 
 
@@ -74,11 +74,7 @@ public class PlayerControllerX : MonoBehaviour
             Destroy(other.gameObject);
 
         }
-        else if(other.gameObject.CompareTag("Ground")&&!gameOver)
-        {
-            playerRb.AddForce(Vector3.up * 7, ForceMode.Impulse);
-            playerAudio.PlayOneShot((boingsound, 1.0f));
-        }
+        
 
     }
 
